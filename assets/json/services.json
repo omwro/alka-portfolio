@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "mdi:access-point-network",
+    "title": "network",
+    "description": "Lorem ipsum"
+  },
+  {
+    "icon": "ph:password",
+    "title": "Password",
+    "description": "Lorem ipsum"
+  },
+  {
+    "icon": "material-symbols:security",
+    "title": "Security",
+    "description": "Lorem ipsum"
+  },
+  {
+    "icon": "material-symbols:security",
+    "title": "Security",
+    "description": "Lorem ipsum"
+  },
+  {
+    "icon": "material-symbols:security",
+    "title": "Security",
+    "description": "Lorem ipsum"
+  },
+  {
+    "icon": "material-symbols:security",
+    "title": "Security",
+    "description": "Lorem ipsum"
+  }
+]

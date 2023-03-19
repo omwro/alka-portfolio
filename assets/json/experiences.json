@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Work Experience",
+    "experiences": [
+      {
+        "startdate": "JAN 2023",
+        "enddate": "DEC 2023",
+        "title": "Security",
+        "locationtext": "Turkiye",
+        "locationlink": "https://google.com",
+        "description": "Lorem ipsum",
+        "bullets": ["test1", "test2", "test3"]
+      },
+      {
+        "startdate": "JAN 2023",
+        "enddate": "DEC 2023",
+        "title": "Security",
+        "locationtext": "Turkiye",
+        "locationlink": null,
+        "description": "Lorem ipsum",
+        "bullets": ["test1", "test2", "test3"]
+      }
+    ]
+  },
+  {
+    "title": "Education",
+    "experiences": [
+      {
+        "startdate": "JAN 2023",
+        "enddate": "DEC 2023",
+        "title": "Security",
+        "locationtext": "Turkiye",
+        "locationlink": "https://google.com",
+        "description": "Lorem ipsum",
+        "bullets": ["test1", "test2", "test3"]
+      },
+      {
+        "startdate": "JAN 2023",
+        "enddate": "DEC 2023",
+        "title": "Security",
+        "locationtext": "Turkiye",
+        "locationlink": null,
+        "description": "Lorem ipsum",
+        "bullets": ["test1", "test2", "test3"]
+      }
+    ]
+  },
+  {
+    "title": "Courses",
+    "experiences": [
+      {
+        "startdate": "JAN 2023",
+        "enddate": null,
+        "title": "Security",
+        "locationtext": "Turkiye",
+        "locationlink": "https://google.com",
+        "description": null,
+        "bullets": null
+      },
+      {
+        "startdate": "JAN 2023",
+        "enddate": null,
+        "title": "Security",
+        "locationtext": "Turkiye",
+        "locationlink": null,
+        "description": null,
+        "bullets": null
+      }
+    ]
+  }
+]

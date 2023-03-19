@@ -1,0 +1,26 @@
+[
+  {
+    "text": "About",
+    "link": "#about"
+  },
+  {
+    "text": "Services",
+    "link": "#services"
+  },
+  {
+    "text": "Portfolio",
+    "link": "#portfolio"
+  },
+  {
+    "text": "Skills",
+    "link": "#skills"
+  },
+  {
+    "text": "Experiences",
+    "link": "#experiences"
+  },
+  {
+    "text": "Contact",
+    "link": "#contact"
+  }
+]
