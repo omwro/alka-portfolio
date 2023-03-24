@@ -7,10 +7,12 @@
                     <a :href="menu.link" class="hover:text-primary">{{menu.text}}</a>
                 </li>
             </ul>
-            <Icon name="ci:menu-alt-05"
-                  size="32px"
-                  @click="openMobileMenu()"
-                  class="header-mobile self-center cursor-pointer text-primary"/>
+            <div class="header-mobile">
+                <Icon name="ci:menu-alt-05"
+                      size="32px"
+                      @click="openMobileMenu()"
+                      class="self-center cursor-pointer text-primary"/>
+            </div>
         </div>
     </header>
     <div class="h-[75px]"></div>
