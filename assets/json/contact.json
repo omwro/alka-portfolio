@@ -3,5 +3,10 @@
     "icon": "mdi:linkedin",
     "url": "https://www.linkedin.com/in/raif-kaya-444541245/",
     "name": "LinkedIn"
+  },
+  {
+    "icon": "mdi:gmail",
+    "url": "mailto:public.raifkaya@gmail.com",
+    "name": "Mail"
   }
 ]
