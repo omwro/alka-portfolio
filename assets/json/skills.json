@@ -1,30 +1,44 @@
 [
   {
-    "title": "Python",
-    "percentile": 40
+    "title": "Network Mapper",
+    "percentile": 100,
+    "level": "Professional",
+    "years": 5
+  },
+  {
+    "title": "Brute Force Attacks",
+    "percentile": 90,
+    "level": "Professional",
+    "years": 4
+  },
+  {
+    "title": "Linux (Debian)",
+    "percentile": 70,
+    "level": "Intermediate",
+    "years": 8
+  },
+  {
+    "title": "Acunetix",
+    "percentile": 70,
+    "level": "Intermediate",
+    "years": 2
+  },
+  {
+    "title": "Injection Attacks",
+    "percentile": 50,
+    "level": "Intermediate",
+    "years": 3
+  },
+  {
+    "title": "Burp Suite",
+    "percentile": 40,
+    "level": "Beginner",
+    "years": 1
   },
   {
     "title": "Python",
-    "percentile": 50
-  },
-  {
-    "title": "Python",
-    "percentile": 60
-  },
-  {
-    "title": "Python",
-    "percentile": 70
-  },
-  {
-    "title": "Python",
-    "percentile": 80
-  },
-  {
-    "title": "Python",
-    "percentile": 90
-  },
-  {
-    "title": "Python",
-    "percentile": 100
+    "percentile": 30,
+    "level": "Beginner",
+    "years": 1
   }
 ]
