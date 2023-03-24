@@ -4,12 +4,12 @@
     "link": "#about"
   },
   {
-    "text": "Services",
-    "link": "#services"
-  },
-  {
     "text": "Portfolio",
     "link": "#portfolio"
+  },
+  {
+    "text": "Services",
+    "link": "#services"
   },
   {
     "text": "Skills",

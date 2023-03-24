@@ -4,5 +4,13 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         'nuxt-icon'
     ],
-    css: ['@/assets/css/tailwind.css']
+    css: ['@/assets/css/tailwind.css'],
+    app: {
+        head: {
+            title: 'Raif Kaya - Portfolio Website - Cyber Security Engineer',
+            htmlAttrs: {
+                lang: 'en'
+            }
+        }
+    }
 })

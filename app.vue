@@ -4,8 +4,8 @@
         <Menu/>
         <Home/>
         <About/>
-        <Services/>
         <Portfolio/>
+        <Services/>
         <Skills/>
         <Experiences/>
         <Contact/>

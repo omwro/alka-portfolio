@@ -1,6 +1,6 @@
 <template>
     <header class="flex flex-row gap-4 bg-primary-background border-b-2 border-primary-border p-4 justify-between fixed w-full h-[75px]">
-        <h1 class="text-4xl">Rauf Kaya</h1>
+        <span class="text-4xl">Rauf Kaya</span>
         <div class="flex flex-row">
             <ul class="header-desktop flex-row gap-4 self-center">
                 <li v-for="menu in json">
@@ -9,6 +9,7 @@
             </ul>
             <Icon name="ci:menu-alt-05"
                   size="32px"
+                  @click="openMobileMenu()"
                   class="header-mobile self-center cursor-pointer"/>
         </div>
     </header>
@@ -17,6 +18,16 @@
 
 <script setup>
 import json from "../../assets/json/menu.json"
+
+const ACTIVE_CLASS_NAME = "active"
+const openMobileMenu = () => {
+    const classList = document.getElementById("menu").classList;
+    if (!classList.contains(ACTIVE_CLASS_NAME)) {
+        classList.add(ACTIVE_CLASS_NAME)
+    } else {
+        classList.remove(ACTIVE_CLASS_NAME)
+    }
+}
 </script>
 
 <script>
