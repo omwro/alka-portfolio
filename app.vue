@@ -40,7 +40,7 @@ if (process.client) {
     window.addEventListener('scroll', () => {
         for (let i = 0; i < sortedMenuItems.length; i++) {
             const item = sortedMenuItems[i];
-            if ((window.scrollY + 1) >= item.offsetTop) {
+            if (window.scrollY >= (item.offsetTop - 128 - 75)) {
                 // Remove all active classes
                 document.querySelectorAll('a.active')
                     .forEach(x => x.classList.remove("active"))

@@ -2,9 +2,7 @@
     <Section id="home" class="bg-primary-section">
         <div class="flex flex-col gap-8 md:flex-row-reverse">
             <div class="flex self-center md:justify-center md:w-1/2">
-                <img :src="`/_nuxt/${content.home.image}`"
-                     class="object-cover border border-primary max-w-[300px]"
-                     alt="Profile Photo"/>
+                <div id="selfie"></div>
             </div>
             <div class="flex flex-col gap-4 text-center md:text-left md:self-center md:w-1/2">
                 <h1 class="text-4xl md:text-5xl font-extrabold">{{ content.home.heading }}</h1>
@@ -39,8 +37,7 @@ export default {
     padding-top: 32px;
 }
 
-#home img {
-
+#home #selfie {
     -webkit-animation: morph 8s ease-in-out infinite;
     animation: morph 8s ease-in-out infinite;
     background-image: url(~/assets/images/selfie.png);
@@ -49,6 +46,9 @@ export default {
     background-size: contain;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     transition: all 1s ease-in-out;
+    height: 400px;
+    width: 300px;
+    @apply border border-primary
 }
 
 @keyframes morph {
