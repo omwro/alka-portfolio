@@ -1,0 +1,32 @@
+{
+  "home": {
+    "heading": "Cyber Security Engineer",
+    "paragraph": "Hi, My name is Raif Kaya, a 24 year old Junior Cyber Security Engineer in search for a Traineeship located near Amsterdam!",
+    "image": "assets/images/selfie.png"
+  },
+  "about": {
+    "heading": "About",
+    "subheading": "A self taught with a lot of interest in Cyber Security",
+    "paragraph": "Hi, My name is Raif Kaya, a 24 year old Junior Cyber Security Engineer in search for a Traineeship located in Amsterdam! Hi, My name is Raif Kaya, a 24 year old Junior Cyber Security Engineer in search for a Traineeship located in Amsterdam! Hi, My name is Raif Kaya, a 24 year old Junior Cyber Security Engineer in search for a Traineeship located in Amsterdam!"
+  },
+  "portfolio": {
+    "heading": "Portfolio",
+    "subheading": "Homemade projects to become the best"
+  },
+  "services": {
+    "heading": "Services",
+    "subheading": "One of my finest specialties"
+  },
+  "skills": {
+    "heading": "Skills",
+    "subheading": "Mastering skills that are beyond legal"
+  },
+  "experiences": {
+    "heading": "Experiences",
+    "subheading": "My backstory in one overview"
+  },
+  "contact": {
+    "heading": "Contact",
+    "subheading": "Lets drink some coffee and get to know each other better"
+  }
+}

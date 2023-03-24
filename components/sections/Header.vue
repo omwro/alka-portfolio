@@ -1,16 +1,16 @@
 <template>
-    <header class="flex flex-row gap-4 bg-primary-background border-b-2 border-primary-border p-4 justify-between fixed w-full h-[75px]">
-        <span class="text-4xl">Rauf Kaya</span>
+    <header class="flex flex-row gap-4 bg-primary-background border-b border-primary p-4 justify-between fixed w-full h-[75px]">
+        <a href="#" class="text-4xl font-extrabold">Raif Kaya</a>
         <div class="flex flex-row">
             <ul class="header-desktop flex-row gap-4 self-center">
                 <li v-for="menu in json">
-                    <a :href="menu.link">{{menu.text}}</a>
+                    <a :href="menu.link" class="hover:text-primary">{{menu.text}}</a>
                 </li>
             </ul>
             <Icon name="ci:menu-alt-05"
                   size="32px"
                   @click="openMobileMenu()"
-                  class="header-mobile self-center cursor-pointer"/>
+                  class="header-mobile self-center cursor-pointer text-primary"/>
         </div>
     </header>
     <div class="h-[75px]"></div>
@@ -43,5 +43,9 @@ export default {
 
 .header-mobile {
     @apply block md:hidden
+}
+
+a.active {
+    @apply text-primary border-b border-primary
 }
 </style>

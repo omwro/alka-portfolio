@@ -1,5 +1,5 @@
 <template>
-    <footer class="text-center p-2 bg-primary-block">
+    <footer class="text-center p-2 bg-primary-text text-primary-background">
         <small>&copy; Copyright {{currentYear}} Rauf Kaya. All Rights Reserved</small>
     </footer>
 </template>

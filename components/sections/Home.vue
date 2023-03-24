@@ -1,26 +1,30 @@
 <template>
-    <Section id="home" class="md:flex-row-reverse items-start pt-8">
-        <div class="md:w-1/2">
-            <img :src="`/_nuxt/${json.image}`" class="object-center object-contain w-[300px]" alt="Profile Photo"/>
-            <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                <defs>
-                    <filter id="round">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-                    </filter>
-                </defs>
-            </svg>
-        </div>
-        <div class="md:w-1/2">
-            <h1>{{ json.header }}</h1>
-            <p>{{ json.paragraph }}</p>
+    <Section id="home" class="bg-primary-section">
+        <div class="flex flex-col gap-8 md:flex-row-reverse">
+            <div class="flex self-center md:justify-center md:w-1/2">
+                <img :src="`/_nuxt/${content.home.image}`"
+                     class="object-cover border border-primary max-w-[300px]"
+                     alt="Profile Photo"/>
+            </div>
+            <div class="flex flex-col gap-4 text-center md:text-left md:self-center md:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-extrabold">{{ content.home.heading }}</h1>
+                <p class="text-lg md:text-xl">{{ content.home.paragraph }}</p>
+                <div>
+                    <a v-for="contactInfo in contact" :href="contactInfo.url" target="_blank">
+                        <Icon :name="contactInfo.icon"
+                              class="text-primary-text cursor-pointer hover:text-primary"
+                              size="36"/>
+                    </a>
+
+                </div>
+            </div>
         </div>
     </Section>
 </template>
 
 <script setup>
-import json from "../../assets/json/home.json"
+import content from "../../assets/json/content.json"
+import contact from "../../assets/json/contact.json"
 import Section from "../elements/Section";
 </script>
 
@@ -30,38 +34,32 @@ export default {
 }
 </script>
 
-<style scoped>
-#home {
-    margin-top: 0;
-    margin-bottom: 0;
-    min-height: calc(100vh - 75px);
+<style>
+#home main {
+    padding-top: 32px;
 }
 
-img {
-    width: 500px;
-    height: 500px;
+#home img {
 
-    -webkit-mask-image: url(assets/images/masks/mask2.png);
-    /*mask-image: url(assets/images/masks/mask1.png);*/
-    -webkit-mask-repeat: no-repeat;
-    /*mask-repeat: no-repeat;*/
-    -webkit-mask-size: 93%;
-    /*mask-size: cover;*/
-    -webkit-mask-position: center;
-    /*mask-position: center;*/
-    animation: maskswitch 5s infinite;
+    -webkit-animation: morph 8s ease-in-out infinite;
+    animation: morph 8s ease-in-out infinite;
+    background-image: url(~/assets/images/selfie.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    transition: all 1s ease-in-out;
 }
 
-@keyframes maskswitch {
-
+@keyframes morph {
     0% {
-        -webkit-mask-image: url(assets/images/masks/mask1.png);
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
     50% {
-        -webkit-mask-image: url(assets/images/masks/mask2.png);
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
     }
     100% {
-        -webkit-mask-image: url(assets/images/masks/mask1.png);
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 }
 </style>

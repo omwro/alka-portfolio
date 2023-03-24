@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col rounded-lg"
          :class="[
-             image ? 'w-[300px] overflow-auto' : 'w-full sm:w-[400px] gap-2 p-4 border-2 border-primary-border',
+             image ? 'w-[300px] overflow-auto' : 'w-full sm:w-[400px] gap-2 p-4 border border-primary',
              collapsible ? '' : 'bg-primary-block'
          ]"
          @mouseleave="collapsible ? collapse($event, 'out') : null">
@@ -15,10 +15,10 @@
         <div class="flex flex-col gap-2"
              :class="[image ? 'flex flex-col gap-2 px-2' : '', collapsible ? 'collapsible-container' : '']">
             <Icon v-if="icon" :name="icon" class="text-primary" size="48"/>
-            <div v-if="startdate" class="bg-primary-border rounded-full py-1 px-3 w-max">
+            <div v-if="startdate" class="text-primary-background bg-primary rounded-full py-1 px-3 w-max">
                 <span class="text-sm">{{ startdate }}<template v-if="enddate"> - {{ enddate }}</template></span>
             </div>
-            <h3 v-if="title" class="text-3xl">{{ title }}</h3>
+            <h3 v-if="title" class="text-3xl font-semibold">{{ title }}</h3>
             <a v-if="locationtext && locationlink" class="text-primary w-max" :href="locationlink" target="_blank"
                rel="referrer">
                 {{ locationtext }}
@@ -105,7 +105,7 @@ export default {
 
 <style scoped>
 .collapsible-container {
-    @apply ease-in-out duration-500 overflow-hidden bg-primary-block
+    @apply ease-in-out duration-500 overflow-hidden bg-primary-background
 }
 .collapsible-container:not(.collapsed) {
     @apply h-0

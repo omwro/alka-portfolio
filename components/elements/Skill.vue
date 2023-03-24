@@ -4,7 +4,7 @@
             <span>{{title}}</span>
             <span class="font-bold">{{percentile}}%</span>
         </div>
-        <div class="bg-primary-border rounded-full h-3 overflow-auto">
+        <div class="bg-primary-gray rounded-full h-3 overflow-auto">
             <div class="bg-primary h-3" :style="{'width': percentile+'%'}"></div>
         </div>
     </div>
