@@ -40,7 +40,7 @@ export default {
 #home #selfie {
     -webkit-animation: morph 8s ease-in-out infinite;
     animation: morph 8s ease-in-out infinite;
-    background-image: url(~/assets/images/selfie.png);
+    background-image: url(/images/selfie.png);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;

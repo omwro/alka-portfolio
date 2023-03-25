@@ -2,9 +2,9 @@
     <Section id="about">
         <Content class="md:flex-nowrap md:gap-16">
             <div class="w-full max-w-[300px] md:max-w-[450px]">
-                <img src="~/assets/images/about.png"
-                alt="about me image"
-                class="w-full object-cover rounded-xl">
+                <nuxt-img src="/images/about.png"
+                          alt="about me image"
+                          class="w-full object-cover rounded-xl"/>
             </div>
             <div class="flex flex-col flex-initial w-full gap-2">
                 <Heading>{{content.about.heading}}</Heading>

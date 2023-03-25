@@ -5,7 +5,7 @@
              collapsible ? '' : 'bg-primary-block'
          ]"
          @mouseleave="collapsible ? collapse($event, 'out') : null">
-        <img v-if="image"
+        <nuxt-img v-if="image"
              :src="image"
              :alt="title + 'portfolio image'"
              class="object-cover w-[300px] h-[200px] cursor-pointer"
