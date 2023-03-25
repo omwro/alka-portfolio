@@ -1,10 +1,51 @@
 <template>
+    <Section id="footer" class="bg-primary-text text-primary-background">
+        <div class="flex flex-col gap-4">
+            <div class="text-4xl font-extrabold cursor-pointer">
+                <Icon name="Logo"
+                      class="text-primary"
+                      size="48"/>
+                <span>Raif Kaya</span>
+            </div>
+            <div>
+                <a v-for="contact in contactJson" :href="contact.url" target="_blank">
+                    <Icon :name="contact.icon"
+                          class="text-primary-gray cursor-pointer hover:text-primary"
+                          size="32"/>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-row gap-8">
+            <div>
+                <div class="uppercase font-bold mb-2">Menu</div>
+                <ul class="flex flex-col gap-2">
+                    <li v-for="menu in menuJson">
+                        <a :href="menu.link" class="text-primary-gray">{{menu.text}}</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="uppercase font-bold mb-2">Portfolio</div>
+                <ul class="flex flex-col gap-2">
+                    <li v-for="portfolio in portfolioJson">
+                        <a :href="portfolio.bottomtextlink" class="text-primary-gray">{{portfolio.title}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </Section>
     <footer class="text-center p-2 bg-primary-text text-primary-background">
         <small>&copy; Copyright {{currentYear}} Rauf Kaya. All Rights Reserved</small>
     </footer>
 </template>
 
 <script setup>
+import contactJson from "../../assets/json/contact.json"
+import menuJson from "../../assets/json/menu.json"
+import portfolioJson from "../../assets/json/portfolio.json"
+
+import Section from "../elements/Section";
+
 const currentYear = new Date().getFullYear();
 </script>
 
@@ -14,6 +55,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style>
+#footer > main {
+    @apply py-8 flex-row flex-wrap justify-between
+}
 </style>
