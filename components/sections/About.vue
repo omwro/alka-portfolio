@@ -9,7 +9,7 @@
             <div class="flex flex-col flex-initial w-full gap-2">
                 <Heading>{{content.about.heading}}</Heading>
                 <SubHeading>{{content.about.subheading}}</SubHeading>
-                <p class="text-center md:text-left">{{content.about.paragraph}}</p>
+                <p class="text-center md:text-left whitespace-pre-line	">{{content.about.paragraph}}</p>
             </div>
         </Content>
     </Section>

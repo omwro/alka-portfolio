@@ -1,32 +1,22 @@
 [
   {
     "icon": "mdi:access-point-network",
-    "title": "network",
-    "description": "Lorem ipsum"
+    "title": "Network Attacks",
+    "description": "I'm able to use some powerful set of tools and methods like Airmon-ng, Evil Twin, Bruteforce, Wireshark and Mitm. These allow me to conduct a range of attacks and analysisses on networks, identify vunerabilities and potential entry points for unauthorized access."
   },
   {
     "icon": "ph:password",
-    "title": "Password",
-    "description": "Lorem ipsum"
+    "title": "Password Attacks",
+    "description": "I'm able to use multiple techniques in order to attack passwords like Cryptography, Pass-The-Hash, Bruteforce and Phising attacks. These allow me to intercept accounts with the so called secure passwords."
   },
   {
-    "icon": "material-symbols:security",
-    "title": "Security",
-    "description": "Lorem ipsum"
+    "icon": "iconoir:www",
+    "title": "Website Attacks",
+    "description": "I'm able to use vulnerabilities to my advantage like SQL- and XSS injections, SSRF, No-Redirect, Wordpress vulnerabilities and Web Shells. These allow to gain unauthorized access to Databases, Admin panels and Server Backdoors."
   },
   {
-    "icon": "material-symbols:security",
-    "title": "Security",
-    "description": "Lorem ipsum"
-  },
-  {
-    "icon": "material-symbols:security",
-    "title": "Security",
-    "description": "Lorem ipsum"
-  },
-  {
-    "icon": "material-symbols:security",
-    "title": "Security",
-    "description": "Lorem ipsum"
+    "icon": "mdi:server-security",
+    "title": "Server Attacks",
+    "description": "I'm able to use powerful set of tools and methods like DNS Floods, TCP/UDP attacks, Nmap, FTP/SSH attacks and Firewall Bypasses (Nmap). These allow me to gain unauthorized access to servers and clients and put them offline."
   }
 ]

@@ -15,34 +15,23 @@
                 </a>
             </div>
         </div>
-        <div class="flex flex-row gap-8">
-            <div>
-                <div class="uppercase font-bold mb-2">Menu</div>
-                <ul class="flex flex-col gap-2">
-                    <li v-for="menu in menuJson">
-                        <a :href="menu.link" class="text-primary-gray">{{menu.text}}</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <div class="uppercase font-bold mb-2">Portfolio</div>
-                <ul class="flex flex-col gap-2">
-                    <li v-for="portfolio in portfolioJson">
-                        <a :href="portfolio.bottomtextlink" class="text-primary-gray">{{portfolio.title}}</a>
-                    </li>
-                </ul>
-            </div>
+        <div>
+            <div class="uppercase font-bold mb-2">Menu</div>
+            <ul class="flex flex-col gap-2">
+                <li v-for="menu in menuJson">
+                    <a :href="menu.link" class="text-primary-gray">{{ menu.text }}</a>
+                </li>
+            </ul>
         </div>
     </Section>
     <footer class="text-center p-2 bg-primary-text text-primary-background">
-        <small>&copy; Copyright {{currentYear}} Rauf Kaya. All Rights Reserved</small>
+        <small>&copy; Copyright {{ currentYear }} Rauf Kaya. All Rights Reserved</small>
     </footer>
 </template>
 
 <script setup>
 import contactJson from "../../assets/json/contact.json"
 import menuJson from "../../assets/json/menu.json"
-import portfolioJson from "../../assets/json/portfolio.json"
 
 import Section from "../elements/Section";
 

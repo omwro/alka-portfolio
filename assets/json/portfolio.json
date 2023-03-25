@@ -1,37 +1,27 @@
 [
   {
-    "image": "https://images.techhive.com/images/article/2016/11/linux-penguin-security-100694867-large.jpg?auto=webp&quality=85,70",
-    "title": "Linux",
-    "description": "Lorem ipsum",
-    "bottomtext": "Go to link",
-    "bottomtextlink": "https://google.com"
+    "image": "/projectimages/project-acunetix.jpg",
+    "title": "Acunetix",
+    "description": "I use Acunetix to analyse websites for potential vulnerabilities so the website can either be attacked or inform the website owner with security solutions."
   },
   {
-    "image": "https://images.techhive.com/images/article/2016/11/linux-penguin-security-100694867-large.jpg?auto=webp&quality=85,70",
-    "title": "Linux",
-    "description": "Lorem ipsum",
-    "bottomtext": "Go to link",
-    "bottomtextlink": "https://google.com"
+    "image": "/projectimages/project-burpsuite.jpg",
+    "title": "Burp Suite",
+    "description": "I use Burp Suite to find vulnerabilities in websites by using their SQL injections, No-Redirect and SSRF tools."
   },
   {
-    "image": "https://images.techhive.com/images/article/2016/11/linux-penguin-security-100694867-large.jpg?auto=webp&quality=85,70",
-    "title": "Linux",
-    "description": "Lorem ipsum",
-    "bottomtext": "Go to link",
-    "bottomtextlink": "https://google.com"
+    "image": "/projectimages/project-nmap.jpg",
+    "title": "Nmap",
+    "description": "I use Nmap to analyse Website and Server details like Port statuses in order to inform owners about closing ports that can potentially be exploited."
   },
   {
-    "image": "https://images.techhive.com/images/article/2016/11/linux-penguin-security-100694867-large.jpg?auto=webp&quality=85,70",
-    "title": "Linux",
-    "description": "Lorem ipsum",
-    "bottomtext": "Go to link",
-    "bottomtextlink": "https://google.com"
+    "image": "/projectimages/project-wireshark.jpg",
+    "title": "Wireshark",
+    "description": "I use Wireshark to analyse incoming network traffic and investigate handshake packets."
   },
   {
-    "image": "https://images.techhive.com/images/article/2016/11/linux-penguin-security-100694867-large.jpg?auto=webp&quality=85,70",
-    "title": "Linux",
-    "description": "Lorem ipsum",
-    "bottomtext": "Go to link",
-    "bottomtextlink": "https://google.com"
+    "image": "/projectimages/project-sqlmap.jpg",
+    "title": "SQLMap",
+    "description": "I use SQLMap to retrieve Database and Admin Panel information of SQL enabled website."
   }
 ]

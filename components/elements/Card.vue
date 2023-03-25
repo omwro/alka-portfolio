@@ -6,14 +6,16 @@
          ]"
          @mouseleave="collapsible ? collapse($event, 'out') : null">
         <nuxt-img v-if="image"
-             :src="image"
-             :alt="title + 'portfolio image'"
-             class="object-cover w-[300px] h-[200px] cursor-pointer"
-             @click="collapsible ? collapse($event, 'click') : null"
-             @mouseenter="collapsible ? collapse($event, 'in') : null"
-        />
+                  :src="image"
+                  :alt="title + 'portfolio image'"
+                  class="object-cover w-[300px] h-[200px] cursor-pointer relative"
+                  @click="collapsible ? collapse($event, 'click') : null"
+                  @mouseenter="collapsible ? collapse($event, 'in') : null"/>
         <div class="flex flex-col gap-2"
-             :class="[image ? 'flex flex-col gap-2 px-2' : '', collapsible ? 'collapsible-container' : '']">
+             :class="[
+                 image ? 'flex flex-col gap-2 px-2' : '',
+                 collapsible ? 'collapsible-container' : ''
+                 ]">
             <Icon v-if="icon" :name="icon" class="text-primary" size="48"/>
             <div v-if="startdate" class="text-primary-background bg-primary rounded-full py-1 px-3 w-max">
                 <span class="text-sm">{{ startdate }}<template v-if="enddate"> - {{ enddate }}</template></span>
