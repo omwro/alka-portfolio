@@ -8,10 +8,10 @@
             <a v-for="contact in contactJson"
                :href="contact.url"
                target="_blank"
-               class="flex bg-primary border border-primary rounded-2xl overflow-hidden ">
+               class="flex bg-primary group hover:bg-primary-light border border-primary hover:border-primary-light rounded-2xl overflow-hidden ">
                 <div class="p-2 bg-primary-background relative right-arrow">
                     <Icon :name="contact.icon"
-                          class="text-primary cursor-pointer"
+                          class="text-primary group-hover:text-primary-light cursor-pointer"
                           size="36"/>
                 </div>
                 <div class="py-2 px-6 self-center text-primary-background">

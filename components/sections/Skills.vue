@@ -7,7 +7,8 @@
         <Content>
             <Skill v-for="skill in json"
                     :title="skill.title"
-                    :percentile="skill.percentile"/>
+                    :percentile="skill.percentile"
+                    :tags="[skill.level, `${skill.years} years experience`]"/>
         </Content>
     </Section>
 </template>

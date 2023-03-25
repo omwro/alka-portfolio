@@ -1,6 +1,11 @@
 <template>
     <header class="flex flex-row gap-4 bg-primary-background border-b border-primary p-4 justify-between fixed w-full h-[75px]">
-        <a href="#" class="text-4xl font-extrabold">Raif Kaya</a>
+        <a href="#" class="text-4xl font-extrabold cursor-pointer">
+            <Icon name="Logo"
+                  class="text-primary"
+                  size="36"/>
+            <span>Raif Kaya</span>
+        </a>
         <div class="flex flex-row">
             <ul class="header-desktop flex-row gap-4 self-center">
                 <li v-for="menu in json">

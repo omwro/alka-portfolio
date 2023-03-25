@@ -19,7 +19,7 @@
                 <span class="text-sm">{{ startdate }}<template v-if="enddate"> - {{ enddate }}</template></span>
             </div>
             <h3 v-if="title" class="text-3xl font-semibold">{{ title }}</h3>
-            <a v-if="locationtext && locationlink" class="text-primary w-max" :href="locationlink" target="_blank"
+            <a v-if="locationtext && locationlink" class="text-primary w-max hover:text-primary-light" :href="locationlink" target="_blank"
                rel="referrer">
                 {{ locationtext }}
                 <Icon name="ri:external-link-fill"/>
@@ -32,7 +32,7 @@
                 </li>
             </ul>
             <a v-if="bottomtext && bottomtextlink"
-               class="text-primary w-max"
+               class="text-primary w-max hover:text-primary-light"
                :href="bottomtextlink"
                target="_blank"
                rel="referrer"

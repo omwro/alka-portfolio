@@ -7,12 +7,18 @@
         <div class="bg-primary-gray rounded-full h-3 overflow-auto">
             <div class="bg-primary h-3" :style="{'width': percentile+'%'}"></div>
         </div>
+        <div class="flex flex-row gap-2">
+            <div v-for="tag in tags"
+                 class="bg-primary rounded text-primary-background text-sm px-2 py-1">
+                {{tag}}
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
     name: "Skill",
-    props: ["title", "percentile"]
+    props: ["title", "percentile", "tags"]
 }
 </script>
