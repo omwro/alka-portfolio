@@ -8,6 +8,7 @@
             <a v-for="contact in contactJson"
                :href="contact.url"
                target="_blank"
+               :aria-label="contact.name"
                class="flex bg-primary group hover:bg-primary-light border border-primary hover:border-primary-light rounded-2xl overflow-hidden ">
                 <div class="p-2 bg-primary-background relative right-arrow">
                     <Icon :name="contact.icon"

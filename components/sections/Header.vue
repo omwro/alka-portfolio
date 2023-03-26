@@ -1,5 +1,5 @@
 <template>
-    <header class="flex flex-row gap-4 bg-primary-background border-b border-primary p-4 justify-between fixed w-full h-[75px]">
+    <header class="flex flex-row gap-4 bg-primary-background border-b border-primary p-4 justify-between fixed w-full h-[75px] z-10">
         <a href="#" class="text-4xl font-extrabold cursor-pointer">
             <Icon name="Logo"
                   class="text-primary"

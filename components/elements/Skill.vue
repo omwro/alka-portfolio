@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col gap-1 w-full sm:w-[300px]">
+    <div class="skills flex flex-col gap-1 w-full">
         <div class="flex flex-row gap-2 justify-between">
             <span>{{title}}</span>
             <span class="font-bold">{{percentile}}%</span>
@@ -22,3 +22,11 @@ export default {
     props: ["title", "percentile", "tags"]
 }
 </script>
+
+<style scoped>
+.skills {
+    @screen md {
+        width: calc(50% - 1rem);
+    }
+}
+</style>

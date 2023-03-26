@@ -5,11 +5,17 @@
                 <div id="selfie"></div>
             </div>
             <div class="flex flex-col gap-4 text-center md:text-left md:self-center md:w-1/2">
-                <h1 class="text-4xl md:text-5xl font-extrabold">{{ content.home.heading }}</h1>
+                <h1 class="text-4xl md:text-5xl font-extrabold">
+                    <client-only>
+                        {{ scribbledHeading }}
+                    </client-only>
+                </h1>
                 <p class="text-lg md:text-xl">{{ content.home.paragraph }}</p>
                 <div>
-                    <a v-for="contactInfo in contact" :href="contactInfo.url" target="_blank">
-                        <Icon :name="contactInfo.icon"
+                    <a v-for="contact in contactJson"
+                       :href="contact.url"
+                       target="_blank" :aria-label="contact.name">
+                        <Icon :name="contact.icon"
                               class="text-primary-text cursor-pointer hover:text-primary"
                               size="36"/>
                     </a>
@@ -22,8 +28,20 @@
 
 <script setup>
 import content from "../../assets/json/content.json"
-import contact from "../../assets/json/contact.json"
+import contactJson from "../../assets/json/contact.json"
 import Section from "../elements/Section";
+
+const scribble = () => {
+    const heading = [...content.home.heading];
+    const headingLength = heading.length;
+    const random = Math.floor(Math.random() * headingLength)
+    console.log("random", random)
+    // if (heading[random] === " ") return scribble()
+    heading[random] = Math.random() < 0.5 ? 0 : 1;
+    return heading.join('');
+}
+
+const scribbledHeading = scribble();
 </script>
 
 <script>

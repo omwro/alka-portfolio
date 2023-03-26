@@ -21,7 +21,7 @@ module.exports = {
                     'background': '#FFFFFF',
                     'section': '#f9f9f9',
                     'text': "#2d2e32",
-                    'gray': "#748397",
+                    'gray': "#A0ACBD",
                     'darkgray': "#1f2630"
                 },
                 secondary: {
@@ -30,7 +30,10 @@ module.exports = {
             },
             borderWidth: {
                 DEFAULT: '3px',
-            }
+            },
+            boxShadow: {
+                DEFAULT: '0 0 10px 0 rgba(45,46,50,1)'
+            },
         }
     },
     plugins: []

@@ -8,7 +8,10 @@
                 <span>Raif Kaya</span>
             </div>
             <div>
-                <a v-for="contact in contactJson" :href="contact.url" target="_blank">
+                <a v-for="contact in contactJson"
+                   :href="contact.url"
+                   target="_blank"
+                    :aria-label="contact.name">
                     <Icon :name="contact.icon"
                           class="text-primary-gray cursor-pointer hover:text-primary"
                           size="32"/>

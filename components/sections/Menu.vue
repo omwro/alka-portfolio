@@ -1,5 +1,5 @@
 <template>
-    <div id="menu" class="flex flex-row w-full h-auto justify-end md:hidden ease-in-out duration-500">
+    <div id="menu" class="flex flex-row w-full h-auto justify-end md:hidden ease-in-out duration-500 z-10">
         <ul class="flex flex-col gap-4 py-4 text-center fixed bg-primary-background border-primary  sm:rounded-bl-lg ease-in-out duration-500">
             <li v-for="menu in json">
                 <a :href="menu.link" @click="closeMenu">{{menu.text}}</a>

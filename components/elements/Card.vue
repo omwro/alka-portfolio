@@ -1,14 +1,14 @@
 <template>
-    <div class="flex flex-col rounded-lg"
+    <div class="card flex flex-col rounded-lg w-full"
          :class="[
-             image ? 'w-[300px] overflow-auto' : 'w-full sm:w-[400px] gap-2 p-4 border border-primary',
+             image ? 'overflow-auto shadow' : 'p-4 border border-primary',
              collapsible ? '' : 'bg-primary-block'
          ]"
          @mouseleave="collapsible ? collapse($event, 'out') : null">
         <nuxt-img v-if="image"
                   :src="image"
                   :alt="title + 'portfolio image'"
-                  class="object-cover w-[300px] h-[200px] cursor-pointer relative"
+                  class="object-cover cursor-pointer relative"
                   @click="collapsible ? collapse($event, 'click') : null"
                   @mouseenter="collapsible ? collapse($event, 'in') : null"/>
         <div class="flex flex-col gap-2"
@@ -106,6 +106,14 @@ export default {
 </script>
 
 <style scoped>
+.card {
+    @screen md {
+       width: calc(50% - 1rem);
+    }
+}
+img {
+    aspect-ratio: 16/9;
+}
 .collapsible-container {
     @apply ease-in-out duration-500 overflow-hidden bg-primary-background
 }
