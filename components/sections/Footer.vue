@@ -1,9 +1,9 @@
 <template>
     <Section id="footer" class="bg-primary-text text-primary-background">
         <div class="flex flex-col gap-4">
-            <div class="text-4xl font-extrabold cursor-pointer">
+            <div class="text-4xl font-extrabold">
                 <Icon name="Logo"
-                      class="text-primary"
+                      class="text-primary mr-1"
                       size="48"/>
                 <span>Raif Kaya</span>
             </div>

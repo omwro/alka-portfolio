@@ -1,7 +1,7 @@
 <template>
     <div class="card flex flex-col rounded-lg w-full"
          :class="[
-             image ? 'overflow-auto shadow' : 'p-4 border border-primary',
+             image ? 'overflow-auto shadow self-start' : 'p-4 border border-primary',
              collapsible ? '' : 'bg-primary-block'
          ]"
          @mouseleave="collapsible ? collapse($event, 'out') : null">
