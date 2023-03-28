@@ -3,11 +3,11 @@
     "title": "Work Experience",
     "experiences": [
       {
-        "startdate": "JAN 2023",
-        "enddate": "DEC 2023",
-        "title": "Security",
+        "startdate": "2021",
+        "enddate": "2021",
+        "title": "Ecodation Cyber Security",
         "locationtext": "Turkiye",
-        "locationlink": "https://google.com",
+        "locationlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link",
         "description": "Lorem ipsum",
         "bullets": ["test1", "test2", "test3"]
       },
@@ -26,11 +26,10 @@
     "title": "Education",
     "experiences": [
       {
-        "startdate": "JAN 2023",
-        "enddate": "DEC 2023",
-        "title": "Security",
+        "startdate": "2018",
+        "enddate": "2022",
+        "title": "Necmettin Erbakan University",
         "locationtext": "Turkiye",
-        "locationlink": "https://google.com",
         "description": "Lorem ipsum",
         "bullets": ["test1", "test2", "test3"]
       },
@@ -49,11 +48,11 @@
     "title": "Courses",
     "experiences": [
       {
-        "startdate": "JAN 2023",
-        "enddate": null,
-        "title": "Security",
+        "startdate": "2021-",
+        "enddate": 2021,
+        "title": "Ecodation Cyber Security",
         "locationtext": "Turkiye",
-        "locationlink": "https://google.com",
+        "locationlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link",
         "description": null,
         "bullets": null
       },
