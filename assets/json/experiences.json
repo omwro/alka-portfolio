@@ -57,11 +57,11 @@
         "bullets": null
       },
       {
-        "startdate": "JAN 2023",
-        "enddate": null,
-        "title": "Security",
+        "startdate": "2022",
+        "enddate": 2022,
+        "title": "BTK Academi DDOS",
         "locationtext": "Turkiye",
-        "locationlink": null,
+        "locationlink":"https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ",
         "description": null,
         "bullets": null
       }
