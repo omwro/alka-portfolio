@@ -1,16 +1,23 @@
 <template>
-    <div class="card flex flex-col rounded-lg w-full"
+    <div class="card flex flex-col rounded-lg w-full group overflow-y-hidden"
          :class="[
              image ? 'overflow-auto shadow self-start' : 'p-4 border border-primary',
              collapsible ? '' : 'bg-primary-block'
          ]"
          @mouseleave="collapsible ? collapse($event, 'out') : null">
-        <nuxt-img v-if="image"
-                  :src="image"
-                  :alt="title + 'portfolio image'"
-                  class="object-cover cursor-pointer relative"
-                  @click="collapsible ? collapse($event, 'click') : null"
-                  @mouseenter="collapsible ? collapse($event, 'in') : null"/>
+        <div v-if="image"
+             class="relative"
+             @click="collapsible ? collapse($event, 'click') : null"
+             @mouseenter="collapsible ? collapse($event, 'in') : null">
+            <nuxt-img :src="image"
+                      :alt="title + 'portfolio image'"
+                      class="object-cover cursor-pointer relative brightness-50 group-hover:brightness-100 ease-in-out duration-500"/>
+            <h3 v-if="title" class="text-3xl font-semibold absolute bottom-0 left-0 p-2 text-primary-background group-hover:hidden" :class="{'hidden': clickCollapse}">{{ title }}</h3>
+            <div class="text-primary-background absolute top-0 right-0 p-2 group-hover:hidden" :class="{'hidden': clickCollapse}">
+                <small>See more</small>
+                <Icon name="clarity:cursor-hand-solid" class="pl-1" size="24"/>
+            </div>
+        </div>
         <div class="flex flex-col gap-2"
              :class="[
                  image ? 'flex flex-col gap-2 px-2' : '',
@@ -20,7 +27,7 @@
             <div v-if="startdate" class="text-primary-background bg-primary rounded-full py-1 px-3 w-max">
                 <span class="text-sm">{{ startdate }}<template v-if="enddate"> - {{ enddate }}</template></span>
             </div>
-            <h3 v-if="title" class="text-3xl font-semibold">{{ title }}</h3>
+            <h3 v-if="title" class="text-3xl font-semibold">{{clickCollapse}}{{ title }}</h3>
             <a v-if="locationtext && locationlink" class="text-primary w-max hover:text-primary-light" :href="locationlink" target="_blank"
                rel="referrer">
                 {{ locationtext }}
@@ -83,6 +90,8 @@ const closeCollapse = (classList) => {
         classList.remove(COLLAPSED_CLASS_NAME)
     }
 }
+
+
 </script>
 
 <script>

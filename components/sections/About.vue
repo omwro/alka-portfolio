@@ -2,7 +2,7 @@
     <Section id="about">
         <Content class="md:flex-nowrap md:gap-16">
             <div class="w-full max-w-[300px] md:max-w-[450px]">
-                <nuxt-img src="/images/about.png"
+                <nuxt-img src="/images/about.jpg"
                           alt="about me image"
                           class="w-full object-cover rounded-xl"/>
             </div>

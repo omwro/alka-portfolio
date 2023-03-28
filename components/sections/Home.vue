@@ -8,6 +8,9 @@
                 <h1 class="text-4xl md:text-5xl font-extrabold">
                     <client-only>
                         {{ scribbledHeading }}
+                        <template #placeholder>
+                            {{originalHeading}}
+                        </template>
                     </client-only>
                 </h1>
                 <p class="text-lg md:text-xl">{{ content.home.paragraph }}</p>
@@ -27,21 +30,31 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import content from "../../assets/json/content.json"
 import contactJson from "../../assets/json/contact.json"
 import Section from "../elements/Section";
+const DELAY = content.home.scribbleTimeMs;
 
+const originalHeading = content.home.heading;
+let scribbledHeading = ref(originalHeading);
 const scribble = () => {
-    const heading = [...content.home.heading];
+    if (scribbledHeading.value !== originalHeading) {
+        scribbledHeading.value = originalHeading;
+        return setTimeout(scribble, DELAY);
+    }
+    const heading = [...originalHeading];
     const headingLength = heading.length;
     const random = Math.floor(Math.random() * headingLength)
-    console.log("random", random)
-    // if (heading[random] === " ") return scribble()
+    if (heading[random] === " ") return scribble();
     heading[random] = Math.random() < 0.5 ? 0 : 1;
-    return heading.join('');
+    scribbledHeading.value = heading.join('')
+    return setTimeout(scribble, DELAY);
 }
 
-const scribbledHeading = scribble();
+if (content.home.scribbleTimeMs) {
+    scribble()
+}
 </script>
 
 <script>
@@ -58,10 +71,11 @@ export default {
 #home #selfie {
     -webkit-animation: morph 8s ease-in-out infinite;
     animation: morph 8s ease-in-out infinite;
-    background-image: url(/images/selfie.png);
+    background-image: url(/images/selfie.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
+    background-origin: border-box;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     transition: all 1s ease-in-out;
     height: 400px;
