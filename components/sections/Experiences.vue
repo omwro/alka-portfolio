@@ -13,6 +13,8 @@
                       :locationtext="experience.locationtext"
                       :locationlink="experience.locationlink"
                       :description="experience.description"
+                      :bottomtext="experience.bottomtext"
+                      :bottomtextlink="experience.bottomtextlink"
                       :bullets="experience.bullets"/>
             </Content>
         </section>

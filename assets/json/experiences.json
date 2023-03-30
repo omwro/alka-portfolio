@@ -9,6 +9,8 @@
         "locationtext": "certificates",
         "locationlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link"
       }
+    ]
+  },
   {
     "title": "Education",
     "experiences": [
@@ -16,8 +18,10 @@
         "startdate": "2018",
         "enddate": "2022",
         "title": "Necmettin Erbakan University",
-        "locationtext": "Turkiye"
+        "locationtext": "Turkey"
       }
+    ]
+  },
   {
     "title": "Courses",
     "experiences": [
@@ -25,18 +29,22 @@
         "startdate": "2021",
         "enddate": "2021",
         "title": "Ecodation Cyber Security",
-        "locationtext": "certificates",
+        "locationtext": "Certificates",
         "locationlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link",
-        "description": "https://ecodation.com/",
+        "description": null,
+        "bottomtext": "Ecodation",
+        "bottomtextlink": "https://ecodation.com/",
         "bullets": null
       },
       {
         "startdate": "2022",
         "enddate": "2022",
         "title": "BTK Academi DDOS",
-        "locationtext": "certificates",
+        "locationtext": "Certificates",
         "locationlink":"https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ",
-        "description": "https://www.btkakademi.gov.tr",
+        "description": null,
+        "bottomtext": "BTK Akademi",
+        "bottomtextlink": "https://www.btkakademi.gov.tr",
         "bullets": null
       }
     ]
