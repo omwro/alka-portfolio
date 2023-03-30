@@ -6,22 +6,9 @@
         "startdate": "2021",
         "enddate": "2021",
         "title": "Ecodation Cyber Security",
-        "locationtext": "Turkiye",
+        "locationtext": "certificates",
         "locationlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link",
-        "description": "Lorem ipsum",
-        "bullets": ["test1", "test2", "test3"]
       },
-      {
-        "startdate": "JAN 2023",
-        "enddate": "DEC 2023",
-        "title": "Security",
-        "locationtext": "Turkiye",
-        "locationlink": null,
-        "description": "Lorem ipsum",
-        "bullets": ["test1", "test2", "test3"]
-      }
-    ]
-  },
   {
     "title": "Education",
     "experiences": [
@@ -30,39 +17,26 @@
         "enddate": "2022",
         "title": "Necmettin Erbakan University",
         "locationtext": "Turkiye",
-        "description": "Lorem ipsum",
-        "bullets": ["test1", "test2", "test3"]
       },
-      {
-        "startdate": "JAN 2023",
-        "enddate": "DEC 2023",
-        "title": "Security",
-        "locationtext": "Turkiye",
-        "locationlink": null,
-        "description": "Lorem ipsum",
-        "bullets": ["test1", "test2", "test3"]
-      }
-    ]
-  },
   {
     "title": "Courses",
     "experiences": [
       {
-        "startdate": "2021-",
+        "startdate": "2021",
         "enddate": 2021,
         "title": "Ecodation Cyber Security",
-        "locationtext": "Turkiye",
+        "locationtext": "certificates",
         "locationlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link",
-        "description": null,
+        "description": https://ecodation.com/,
         "bullets": null
       },
       {
         "startdate": "2022",
         "enddate": 2022,
         "title": "BTK Academi DDOS",
-        "locationtext": "Turkiye",
+        "locationtext": "certificates",
         "locationlink":"https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ",
-        "description": null,
+        "description": https://www.btkakademi.gov.tr,
         "bullets": null
       }
     ]
