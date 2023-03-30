@@ -5,9 +5,11 @@
       {
         "startdate": "2021",
         "enddate": "2021",
-        "title": "Ecodation Cyber Security",
-        "locationtext": "certificates",
-        "locationlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link"
+        "title": "Cyber Security Intern",
+        "locationtext": "Ecodation",
+        "locationlink": "https://ecodation.com/",
+        "bottomtext": "Certificates",
+        "bottomtextlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link"
       }
     ]
   },
@@ -17,8 +19,8 @@
       {
         "startdate": "2018",
         "enddate": "2022",
-        "title": "Necmettin Erbakan University",
-        "locationtext": "Turkey"
+        "title": "International Trade",
+        "locationtext": "Necmettin Erbakan University"
       }
     ]
   },
@@ -29,22 +31,23 @@
         "startdate": "2021",
         "enddate": "2021",
         "title": "Ecodation Cyber Security",
-        "locationtext": "Certificates",
-        "locationlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link",
+        "locationtext": "Ecodation",
+        "locationlink": "https://ecodation.com/",
         "description": null,
-        "bottomtext": "Ecodation",
-        "bottomtextlink": "https://ecodation.com/",
+        "bottomtext": "Certificates",
+        "bottomtextlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link",
         "bullets": null
       },
       {
         "startdate": "2022",
         "enddate": "2022",
         "title": "BTK Academi DDOS",
-        "locationtext": "Certificates",
-        "locationlink":"https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ",
+        "locationtext": "BTK Akademi",
+        "locationlink": "https://www.btkakademi.gov.tr",
+        "bottomtext": "Certificates",
+        "bottomtextlink":"https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ",
         "description": null,
-        "bottomtext": "BTK Akademi",
-        "bottomtextlink": "https://www.btkakademi.gov.tr",
+
         "bullets": null
       }
     ]
