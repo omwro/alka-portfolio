@@ -74,7 +74,7 @@ export default {
     background-image: url(/images/selfie.jpg);
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-origin: border-box;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     transition: all 1s ease-in-out;

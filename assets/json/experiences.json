@@ -4,10 +4,20 @@
     "experiences": [
       {
         "startdate": "2021",
-        "enddate": "2021",
+        "enddate": null,
         "title": "Cyber Security Intern",
         "locationtext": "Ecodation",
         "locationlink": "https://ecodation.com/",
+        "description": "My activities as a Intern Cyber Security Specialist at Ecodation were to research the following sections within Cyber Security:",
+        "bullets": [
+          "The importance of Cyber Security in organisations.",
+          "Workgroup & Active Directory.",
+          "ISO 27001.",
+          "The current GDPR laws.",
+          "LAN, WAN & VLAN.",
+          "VPN, IPSEC-VPN, MPLS-VPN & Site-to-Site VPN Concepts.",
+          "TCP & UDP ports, Inbound- and Outbound Rules."
+        ],
         "bottomtext": "Certificates",
         "bottomtextlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link"
       }
@@ -20,6 +30,7 @@
         "startdate": "2018",
         "enddate": "2022",
         "title": "International Trade",
+        "description": "Even though I already had interests within the Cyber Security field, I wanted to learn the soft skills of International Trading in order to improve myself and keep it as a back-up plan in case we are doomed by Artificial Intelligence.",
         "locationtext": "Necmettin Erbakan University"
       }
     ]
@@ -29,26 +40,37 @@
     "experiences": [
       {
         "startdate": "2021",
-        "enddate": "2021",
+        "enddate": null,
         "title": "Ecodation Cyber Security",
         "locationtext": "Ecodation",
         "locationlink": "https://ecodation.com/",
-        "description": null,
+        "description": "While taking the Ecodation Cyber Security Course, I was tested on the following sections:",
+        "bullets": [
+          "The importance of Cyber Security in organisations.",
+          "Linux OS Virtual Machines.",
+          "Penetration Testing.",
+          "Network Analysis.",
+          "Exploring some Server Services.",
+          "Cloudcomputing."
+        ],
         "bottomtext": "Certificates",
-        "bottomtextlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link",
-        "bullets": null
+        "bottomtextlink": "https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link"
       },
       {
         "startdate": "2022",
-        "enddate": "2022",
+        "enddate": null,
         "title": "BTK Academi DDOS",
         "locationtext": "BTK Akademi",
         "locationlink": "https://www.btkakademi.gov.tr",
+        "description": "While taking the BTK Academi DDOS Course, I was tested on the following sections:",
+        "bullets": [
+          "DNS Flood.",
+          "SYN-ACK Flood.",
+          "Practising DDOS."
+        ],
         "bottomtext": "Certificates",
-        "bottomtextlink":"https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ",
-        "description": null,
+        "bottomtextlink":"https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ"
 
-        "bullets": null
       }
     ]
   }

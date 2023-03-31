@@ -18,13 +18,41 @@
                 </a>
             </div>
         </div>
-        <div>
-            <div class="uppercase font-bold mb-2">Menu</div>
-            <ul class="flex flex-col gap-2">
-                <li v-for="menu in menuJson">
-                    <a :href="menu.link" class="text-primary-gray">{{ menu.text }}</a>
-                </li>
-            </ul>
+        <div class="flex gap-8">
+            <div>
+                <div class="uppercase font-bold mb-2">Experiences</div>
+                <ul class="flex flex-col gap-2">
+                    <li>
+                        <a href="https://drive.google.com/drive/folders/1FdScvIpsRtNLf7PvSzguZQhkRMetm3wJ?usp=share_link"
+                           class="text-primary-gray"
+                           target="_blank">
+                            Certificates
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ecodation.com/"
+                           class="text-primary-gray"
+                           target="_blank">
+                            Ecodation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.btkakademi.gov.tr"
+                           class="text-primary-gray"
+                           target="_blank">
+                            BTK Academi
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="uppercase font-bold mb-2">Menu</div>
+                <ul class="flex flex-col gap-2">
+                    <li v-for="menu in menuJson">
+                        <a :href="menu.link" class="text-primary-gray">{{ menu.text }}</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </Section>
     <footer class="text-center p-2 bg-primary-text text-primary-background">
